@@ -14,6 +14,8 @@ public class ClientController {
 
     @GetMapping(value = "")
     public ResponseEntity<?> publicEndpoint() {
+
+
         return ResponseEntity.status(HttpStatus.OK).body("{ \"message\": \"Este es un endpoint de usuario. Podes ver esta respuesta porque te has logueado en la aplicación.\"}");
     }
 
